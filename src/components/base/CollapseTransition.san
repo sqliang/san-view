@@ -1,0 +1,23 @@
+<template>
+<div class="view-transition" style="height: 100px">
+    <slot></slot>
+</div>
+</template>
+<script>
+import {DataTypes} from 'san';
+
+const prefixCls = 'view-transition';
+
+export default {
+    dataTypes: {
+        isActive: DataTypes.bool
+    },
+    initData() {
+        return {
+            isActive: false
+        };
+    }
+}
+</script>
+
+
